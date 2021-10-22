@@ -63,5 +63,6 @@ TomatoStepProgress is a customizable Swift framework that shows a series of step
 <li>startPathColor: It's the color of the path between the left edge and the first step.</li>
 <li>goalPathColor: It's the color of the path bewteen the last step and the right edge.</li>
 <li>containerBackColor: It's the background color of the container of the whole thing.</li>
-</br>
+
+
 ![](Screenshots/Screenshot_003.jpg)
