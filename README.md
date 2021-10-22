@@ -13,14 +13,14 @@ Compatibility: iOS 13 or greater<br/>
 TomatoStepProgress is a customizable Swift framework that shows a series of steps that the user has to complete and their current progress at the top of the view of each view controller.  The following is a list of features.
 
 <ol>
-<li>Have options of blinking or not blinking the current step position.</li>
+<li>Have options of blinking or not blinking the current step position with two different colors.</li>
 <li>Adjust the speed of blinking the current step position.</li>
 <li>Adjust the diameter of the position circles and other settings.</li>
 </ol>
 
 <h2>Installation</h2>
 
-1. In order to use this framework, download the sample project.  You will find the folder titled **TomatoStepProgressFramework**.  Locate the Xcode file inside.  And put this Xcode file in your Xcode project.  Select your target and make sure you have **TomatoVerticalManiaFramework.framework** under General > Framworks, Libraries, and Embeded Content as shown below.
+1. In order to use this framework, download the sample project.  You will find the folder titled **TomatoStepProgressFramework**.  Locate the Xcode file inside.  And put this Xcode file in your Xcode project.  Select your target and make sure you have **TomatoStepProgress.framework** under General > Framworks, Libraries, and Embeded Content as shown below.
 
 ![](Screenshots/Screenshot_002.jpg)
 
@@ -28,7 +28,7 @@ TomatoStepProgress is a customizable Swift framework that shows a series of step
 
 3. In the base view controller, create a function to set up the menu.  Let us call this function **setup(index: Int)**.
 
-4. In the setup function, create an array of step progress models with **TomatoProgressModel**.  This struct takes three properties: name (String), index (Int).  The **name** property is the name of a step that the app user has to go through.  The index property determines the order of appearance of the corresponing step.
+4. In the setup function, create an array of step progress models with **TomatoProgressModel**.  This struct takes two properties: name (String) and index (Int).  The **name** property is the name of a step that the app user has to go through.  The index property determines the order of appearance of the corresponing step.
 
 5. Call **tomatoProgressSetup(index: index)** in the setup(index: Int) function of the base view controller.
 
@@ -36,10 +36,10 @@ TomatoStepProgress is a customizable Swift framework that shows a series of step
 
 <h2>Variables</h2>
 
-<li>blinkingSpeed: It's speed at which the current position changes its color.</li>
-<li>blinkCurrent: It's a boolean value for blinking or not blinking the current position.</li>
+<li>blinkingSpeed: It's speed at which the current position changes its colors.</li>
+<li>blinkCurrent: It's a boolean value for blinking or not blinking the current position with two colors.</li>
 
-<li>topEdge: It's the top edge where the container of the whole thing appears.</li>
+<li>topEdge: It's the top edge size where the container of the whole thing appears.</li>
 <li>sideEdge: It's the left edge size where the first step starts and the right edge size where the last step ends.</li>
 
 <li>circleDiameter: It's the diameter of the step circle.</li>
