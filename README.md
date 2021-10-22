@@ -45,7 +45,7 @@ TomatoStepProgress is a customizable Swift framework that shows a series of step
 <li>circleDiameter: It's the diameter of the step circle.</li>
 <li>onFillColor: It's the on-state fill color of the circle of the current step.</li>
 <li>offFillColor: It's the off-state fill color of the circle of the current step.</li>
-<li>incompleteFillColor: It's the fill color of the circle of other steps.</li>
+<li>incompleteFillColor: It's the fill color of the circles of other steps.</li>
 <li>strokeColor: It's the stroke color of the circle.</li>
 <li>strokeWidth: It's the stroke size of the circle.</li>
 
@@ -63,5 +63,5 @@ TomatoStepProgress is a customizable Swift framework that shows a series of step
 <li>startPathColor: It's the color of the path between the left edge and the first step.</li>
 <li>goalPathColor: It's the color of the path bewteen the last step and the right edge.</li>
 <li>containerBackColor: It's the background color of the container of the whole thing.</li>
-
+</br>
 ![](Screenshots/Screenshot_003.jpg)
