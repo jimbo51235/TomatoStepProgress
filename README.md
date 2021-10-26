@@ -27,7 +27,7 @@ TomatoStepProgress is a customizable Swift framework that shows a series of step
 
 2. Create a sub-class of **UIViewController**.  Name it BasicViewController, BaseViewController, RootViewController or whatever you want such that all child view controllers can be based on.  For now, let us call this base view controller **BaseViewController**.  Import **TomatoStepProgress** to the view controller.
 
-3. In the base view controller, create a function to set up the menu.  Let us call this function **setup(index: Int)**.
+3. In the base view controller, set the class to **TomatoStepProgressViewController**.  Create a function to set up the menu.  Let us call this function **setup(index: Int)**.
 
 4. In the setup function, create an array of step progress models with **TomatoProgressModel**.  This struct takes two properties: name (String) and index (Int).  The **name** property is the name of a step that the app user has to go through.  The index property determines the order of appearance of the corresponing step.
 
